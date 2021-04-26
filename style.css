@@ -1,12 +1,49 @@
+:root {
+    --walton-red: #C12211;
+    --walton-blue: #1A187E;
+}
+
 * {
-    background-color: red;
+    box-sizing: border-box;
+}
+
+.background {
+    height: vh;
+    background: linear-gradient(var(--walton-red) 0%, var(--walton-blue) 100%);
 }
 
 .main-container {
-    position: relative;
+    text-align: center;
+}
+
+.header {
+    background: yellow;
+}
+
+.nav {
+    background-color: aqua;
 }
 
 .nav-link {
-    background-color: blue;
-    color: white;
+    background: white;
+    color: black;
+}
+
+.center-container {
+    margin: 0 auto;
+    width: 80%;
+    min-width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 20%;
+    min-width: fit-content;
+    background: orchid;
+}
+
+.main-text {
+    background: orange;
 }
