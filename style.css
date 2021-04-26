@@ -7,17 +7,33 @@
     box-sizing: border-box;
 }
 
+body{
+    border: none;
+    margin: 0;
+}
+
 .background {
     height: vh;
-    background: linear-gradient(var(--walton-red) 0%, var(--walton-blue) 100%);
+    background: darkgray;
 }
 
 .main-container {
     text-align: center;
+    height: 1500px;
 }
 
 .header {
-    background: yellow;
+    background: var(--walton-red);
+    height: 100px;
+}
+
+.title {
+    color: white;
+}
+
+.title .logo {
+    width: 45px;
+    height: auto;
 }
 
 .nav {
@@ -41,9 +57,22 @@
 .sidebar {
     width: 20%;
     min-width: fit-content;
-    background: orchid;
+    background: var(--walton-blue);
+    color: white;
 }
 
 .main-text {
-    background: orange;
+    width: 80%;
+    background: white;
+}
+
+.parallax {
+  background-image: url("images/team.jpg");
+
+  min-height: 750px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
