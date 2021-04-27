@@ -1,3 +1,3 @@
 # Walton-Fastpitch
 
-Update to Walton Fastpitch website
+Made by Alex Krupp
