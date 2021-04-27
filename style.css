@@ -1,10 +1,15 @@
 :root {
     --walton-red: #C12211;
     --walton-blue: #1A187E;
+    --walton-light-blue: #2D489B;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -24,11 +29,12 @@ body{
 
 .header {
     background: var(--walton-red);
-    height: 100px;
+    height: fit-content;
 }
 
 .title {
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .title .logo {
@@ -36,19 +42,27 @@ body{
     height: auto;
 }
 
-.nav {
-    background-color: aqua;
+.nav-bar {
+    margin: 0 auto;
+    width: fit-content;
+    display: relative;
+    padding: 20px;
+    background-color: var(--walton-blue);
 }
 
 .nav-link {
-    background: white;
-    color: black;
+    margin: 10px;
+    padding: 10px;
+    display: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--walton-light-blue);
+    color: white;
 }
 
 .center-container {
     margin: 0 auto;
     width: 80%;
-    min-width: fit-content;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -58,16 +72,35 @@ body{
     width: 20%;
     min-width: fit-content;
     background: var(--walton-blue);
-    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-tile {
+    margin: 10px;
+    width: 90%;
+    background: lightgray;
+    justify-content: space-around;
+}
+
+#varsity-raiders img {
+    width: 200px;
 }
 
 .main-text {
     width: 80%;
     background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.entry {
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .parallax {
-  background-image: url("images/team.jpg");
+  background-image: url("images/varsityTeam.jpg");
 
   min-height: 750px; 
 
