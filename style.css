@@ -17,6 +17,18 @@ body{
     margin: 0;
 }
 
+/* Parallax effect */
+.parallax {
+    background-image: url("images/varsityTeam.jpg");
+  
+    min-height: 750px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .background {
     height: vh;
     background: darkgray;
@@ -80,11 +92,6 @@ body{
     margin: 10px;
     width: 90%;
     background: lightgray;
-    justify-content: space-around;
-}
-
-#varsity-raiders img {
-    width: 200px;
 }
 
 .main-text {
@@ -99,13 +106,46 @@ body{
     margin: 0 auto;
 }
 
-.parallax {
-  background-image: url("images/varsityTeam.jpg");
+.bottom-bar {
+    background-color: green;
+    position: relative;
+    flex-direction: column;
+}
 
-  min-height: 750px; 
+footer {
+    text-align: center;
+    padding: 3px;
+}
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Style all social media icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+/* Social Media Icon hover effect*/
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #F56040;
+  color: white;
 }
