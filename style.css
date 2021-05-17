@@ -28,7 +28,7 @@ html, body {
 
 /* Parallax effect */
 .parallax {
-    background-image: url("/images/varsityTeam.jpg");
+    background-image: url("/images/teams/varsityTeam.jpg");
   
     min-height: 750px; 
   
@@ -40,12 +40,14 @@ html, body {
 
 .background {
     height: vh;
-    background: darkgray;
+    background: darkgrey;
 }
 
 .main-container {
     text-align: center;
     height: 100%;
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .header {
@@ -68,28 +70,29 @@ html, body {
 
 
 .nav-bar {
-    margin: 0 10%;
     height: fit-content;
-    display: relative;
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     background-color: var(--walton-blue);
     position: sticky;
     top: 0;
 }
 
+.pinned {
+    width: 100%;
+}
+
 .nav-link {
-    margin: 10px;
+    margin: 0 10px;
     padding: 10px;
-    display: absolute;
-    top: 50%;
-    left: 50%;
     background-color: var(--walton-light-blue);
     color: white;
 }
 
 .center-container {
-    margin: 0 10%;
-    min-width: 80%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -104,7 +107,7 @@ html, body {
     flex-direction: column;
     height: fit-content;
     position: sticky;
-    top: 59px;
+    top: 79px;
 }
 
 .sidebar-tile {
@@ -118,7 +121,7 @@ html, body {
 }
 
 .main-text {
-    width: 80%;
+    max-width: 724px;
     background: white;
     display: flex;
     justify-content: center;
@@ -128,8 +131,7 @@ html, body {
 
 .blog-post {
     border: 5px 0 0 0;
-
-    margin: 10px;
+    padding: 10px;
 }
 
 .entry {
@@ -138,6 +140,48 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.social-media-post-title {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.social-media-timeline {
+    width: 724px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.facebook-timeline iframe {
+    width: 400px;
+    height: 500px;
+    border:none;
+    overflow:hidden;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+}
+
+.sponsor {
+    margin: 10px;
+}
+
+.sponsors .platinum {
+    border: solid #9BCEF2;
+    border-width: 8px;
+}
+
+.sponsors .gold {
+    border: solid #D4AF37;
+    border-width: 6px;
+}
+
+.sponsors .bronze {
+    border: solid #CD7F32;
+    border-width: 4px;
 }
 
 .bottom-bar {
