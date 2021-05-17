@@ -1,3 +1,3 @@
 # Walton-Fastpitch
 
-Made by Alex Krupp
+Made by Alex Krupp and Jake Howard
