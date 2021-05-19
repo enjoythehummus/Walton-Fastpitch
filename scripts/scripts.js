@@ -3,12 +3,12 @@
 const sponsorTile = document.getElementById('sponsor-tile');
 
 const sponsorImages = [
-    '/images/sponsors/ansley_real_estate.jpg',
-    '/images/sponsors/has_foundation.jpg',
-    '/images/sponsors/hummel_landscape_supply.jpg',
-    '/images/sponsors/learning_experience.jpg',
-    '/images/sponsors/platinum_circle_technologies.jpg',
-    '/images/sponsors/sanitizer_llc.jpg'
+    '../images/sponsors/ansley_real_estate.jpg',
+    '../images/sponsors/has_foundation.jpg',
+    '../images/sponsors/hummel_landscape_supply.jpg',
+    '../images/sponsors/learning_experience.jpg',
+    '../images/sponsors/platinum_circle_technologies.jpg',
+    '../images/sponsors/sanitizer_llc.jpg'
 ];
 
 const sponsorLinks = [
